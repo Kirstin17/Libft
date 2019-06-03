@@ -48,8 +48,6 @@ int				ft_memcmp(const void *s1, const void *s2, size_t n);
 void 			*ft_memcpy(void *dst, const void *src, size_t n);
 void			ft_memdel(void **ap);
 void			*ft_memmove(void *dst, const void *src, size_t len);
-int				ft_min(int a, int b);
-int				ft_max(int *tab, int length);
 void			ft_putchar(char c);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putendl(char const *s);
@@ -83,12 +81,19 @@ char			*ft_strrchr(const char *s, int c);
 char			**ft_strsplit(char const *s, char c);
 char			*ft_strstr(char *str, char *to_find);
 char			*ft_strsub(char const *s, unsigned int start, size_t len);
+char			*ft_mem_alloc(char const *str, size_t n);
 char			*ft_strtrim(char const *s);
 void			ft_swap(int *a, int *b);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
+
+/*
+** BONUS FUNCTIONS 
+*/
 int				ft_countwords(char const *str, char c);
 int				ft_get_word_len(char const *str, char c);
-char		*ft_mem_alloc(char const *str, size_t n);
+int				ft_min(int a, int b);
+int				ft_max(int *tab, int length);
+int				ft_nlen(int n);
 
 #endif

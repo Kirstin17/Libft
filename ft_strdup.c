@@ -6,13 +6,13 @@
 /*   By: kiblack <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 22:11:58 by kiblack           #+#    #+#             */
-/*   Updated: 2019/06/01 18:13:42 by kiblack          ###   ########.fr       */
+/*   Updated: 2019/06/03 01:55:27 by kiblack          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char		*ft_strdup(char *src)
 {
 	int		len;
 	char	*str;
@@ -22,7 +22,7 @@ char	*ft_strdup(char *src)
 		len++;
 	if ((str = (char*)malloc(sizeof(char) * (len + 1))) == NULL)
 		return (NULL);
-	len  = 0;
+	len = 0;
 	while (src[len])
 	{
 		str[len] = src[len];

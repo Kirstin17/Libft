@@ -75,7 +75,8 @@ SRC		= ft_memset.c \
 							ft_toupper.c \
 							ft_countwords.c \
 							ft_get_word_len.c \
-							ft_mem_alloc.c
+							ft_mem_alloc.c \
+							ft_nlen.c
 
 HDR = libft.h
 OFL = $(SRC:.c=.o)

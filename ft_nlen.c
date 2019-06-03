@@ -1,42 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*   ft_nlen.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kiblack <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/24 20:47:43 by kiblack           #+#    #+#             */
-/*   Updated: 2019/06/03 00:24:20 by kiblack          ###   ########.fr       */
+/*   Created: 2019/06/03 01:46:14 by kiblack           #+#    #+#             */
+/*   Updated: 2019/06/03 01:46:46 by kiblack          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char			**ft_strsplit(char const *s, char c)
+int		ft_nlen(int n)
 {
-	int			i;
-	int			k;
-	char		**array;
+	int		len;
 
-	k = 0;
-	if (!s)
-		return (NULL);
-	i = ft_countwords(s, c);
-	if (!(array = (char **)malloc(sizeof(char *) * (i + 1))))
-		return (NULL);
-	array[i] = NULL;
-	while (*s)
+	len = 1;
+	if (n == 0)
+		return (1);
+	while (n / 10 != 0)
 	{
-		while (*s == c && *s)
-			s++;
-		i = 0;
-		if (s[i] != c)
-		{
-			while (s[i] != c && s[i])
-				i++;
-			array[k++] = ft_mem_alloc(s, i);
-			s += i;
-		}
+		n /= 10;
+		len *= 10;
 	}
-	return (array);
+	return (len);
 }

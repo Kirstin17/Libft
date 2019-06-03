@@ -6,7 +6,7 @@
 /*   By: kiblack <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 23:29:42 by kiblack           #+#    #+#             */
-/*   Updated: 2019/05/31 19:29:39 by kiblack          ###   ########.fr       */
+/*   Updated: 2019/06/03 01:55:55 by kiblack          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,8 @@ char	*ft_strstr(char *str, char *to_find)
 	int j;
 
 	i = 0;
-
 	if (to_find[i] == '\0')
-		return(str);
+		return (str);
 	while (str[i] != '\0')
 	{
 		j = 0;

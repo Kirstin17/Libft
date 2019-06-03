@@ -12,21 +12,25 @@
 
 #include "libft.h"
 
-int		ft_countwords(char const *str, char c)
+int		ft_countwords(char const *str, char ch)
 {
-	int count;
-	int	i;
+	const char	*string;
+	int			i;
+	int			wc;
 
+	string = str;
 	i = 0;
-	count = 0;
-	while (str[i])
+	wc = 0;
+	while (string[i] != '\0')
 	{
-		while (str[i] == c)
+		if (string[i] && (string[i] == ch))
 			i++;
-		if (str[i] != c && str[i] != '\0')
-			count++;
-		while (str[i] != c && str[i] != '\0')
-			i++;
+		if ((string[i] != ch) && string[i])
+		{
+			wc++;
+			while ((string[i] != ch) && string[i])
+				i++;
+		}
 	}
-	return (count);
+	return (wc);
 }
