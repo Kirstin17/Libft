@@ -6,13 +6,13 @@
 /*   By: kiblack <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 19:06:00 by kiblack           #+#    #+#             */
-/*   Updated: 2019/05/30 19:06:04 by kiblack          ###   ########.fr       */
+/*   Updated: 2019/06/03 03:47:56 by kiblack          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_countwords(char const *str, char ch)
+int				ft_countwords(char const *str, char ch)
 {
 	const char	*string;
 	int			i;

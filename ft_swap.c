@@ -6,13 +6,13 @@
 /*   By: kiblack <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 00:05:44 by kiblack           #+#    #+#             */
-/*   Updated: 2019/06/03 00:06:47 by kiblack          ###   ########.fr       */
+/*   Updated: 2019/06/03 03:47:09 by kiblack          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_swap(int *a, int *b)
+void	ft_swap(int *a, int *b)
 {
-	int tmp_a;
+	int	tmp_a;
 
 	tmp_a = *a;
 	*a = *b;

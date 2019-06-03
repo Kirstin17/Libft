@@ -6,7 +6,7 @@
 /*   By: kiblack <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 02:00:06 by kiblack           #+#    #+#             */
-/*   Updated: 2019/06/01 18:36:38 by kiblack          ###   ########.fr       */
+/*   Updated: 2019/06/03 03:45:38 by kiblack          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int				*ft_memalloc(size_t size);
 void			*ft_memccpy(void *dest, const void *src, int c, size_t size);
 void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
-void 			*ft_memcpy(void *dst, const void *src, size_t n);
+void			*ft_memcpy(void *dst, const void *src, size_t n);
 void			ft_memdel(void **ap);
 void			*ft_memmove(void *dst, const void *src, size_t len);
 void			ft_putchar(char c);
@@ -88,7 +88,7 @@ int				ft_tolower(int c);
 int				ft_toupper(int c);
 
 /*
-** BONUS FUNCTIONS 
+** BONUS FUNCTIONS
 */
 int				ft_countwords(char const *str, char c);
 int				ft_get_word_len(char const *str, char c);
