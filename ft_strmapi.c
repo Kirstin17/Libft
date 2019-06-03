@@ -19,7 +19,7 @@ char				*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	if (!s || !f)
 		return (NULL);
-	fresh = ft_strnew(ft_strlen(s));
+	fresh = (char *)malloc(ft_strlen(s) + 1);
 	if (!fresh)
 		return (NULL);
 	i = 0;
@@ -28,5 +28,6 @@ char				*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		fresh[i] = f(i, s[i]);
 		i++;
 	}
+	fresh[i] = '\0';
 	return (fresh);
 }
